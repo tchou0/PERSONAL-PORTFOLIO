@@ -362,63 +362,65 @@ form.btn2 {
 
 /* -------------------certificates------------------- */
 #certificates {
-    padding: 50px 0;
-  }
-  
-  .certificate-carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .certificate {
-    display: none;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 700px; /* Adjust the maximum width as per your preference */
-    margin: 0 auto; /* Center the certificate horizontally */
-  }
-  
-  .certificate img {
-    max-width: 100%; /* Ensure the image fits within the certificate */
-    border-radius: 20px;
-  }
-  
-  .certificate h3 {
-    font-weight: 500;
-    margin-top: 20px;
-    font-size: 22px; /* Increase the font size for the title */
-  }
-  
-  .certificate p {
-    color: #ababab;
-    font-size: 16px; /* Increase the font size for the description */
-    margin: 10px 0;
-  }
-  
-  .certificate-navigation {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .certificate-navigation button {
-    background: #ff004f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background 0.5s;
-  }
-  
-  .certificate-navigation button:hover {
-    background: #ff3399;
-  }
- 
+  padding: 50px 0;
+}
+
+.certificate-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.certificate {
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 700px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto; /* Center the certificate horizontally */
+}
+
+.certificate img {
+  max-width: 100%; /* Ensure the image fits within the certificate */
+  border-radius: 20px;
+  /* Add this if you want to control the image height as well */
+  max-height: 400px; /* Adjust the maximum height as per your preference */
+}
+
+.certificate h3 {
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 22px; /* Increase the font size for the title */
+}
+
+.certificate p {
+  color: #ababab;
+  font-size: 16px; /* Increase the font size for the description */
+  margin: 10px 0;
+}
+
+.certificate-navigation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.certificate-navigation button {
+  background: #ff004f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.certificate-navigation button:hover {
+  background: #ff3399;
+}
+
   
 /* ---------------css for small screesns--------------------- */
 #fa-xmark,
