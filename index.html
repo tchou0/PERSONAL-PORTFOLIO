@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to My Personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/57eec91958.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Protfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i id="fa-xmark" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i id="fa-bars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I'm <span>Teresa</span><br/>
+            Chou From Macau
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------------about-------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A driven Software Developer looking for opportunities and
+              connections. Growing up, I always had an interest in learning more
+              about technology and wanted to create or develop my own game or
+              app. In my previous job, I helped troubleshoot customers' problems
+              with their devices which led me to learn more about how to fix
+              both software and hardware problems. Recently, I have been honing
+              my programming skills through the Year Up/Pluralsight Application
+              Development program and applying them to create multiple projects
+              for my portfolio. I have utilized Java, Spring Boot, GitHub and
+              MySQL in these projects. In this I have gained confidence to know
+              that I can be successful in this field, especially as I acquire
+              additional skills along the way!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full Stack Developer</span><br />React, Javascript,
+                  HTML/CSS, MySQL, GitHub, Java, Spring Boot, IntelliJ, Visual
+                  Studio Code, OpenAI, Postman API, CIAM, Cloud, PingID, Splunk,
+                  ServiceNow
+                </li>
+                <li>
+                  <span>IT Skills Specialist</span><br />Agile, Scrum,
+                  Confluence, SailPoint, DropBox, Microsoft 365
+                </li>
+                <li>
+                  <span>ForgeRock Engineer</span><br />Managing and securing
+                  customer identities for digital services, including
+                  registration, authentication, access control, and compliance.
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />CIAM intern at Prudential
+                </li>
+                <li>
+                  <span>2023 - Current</span><br />Application Development
+                  trainee at YearUp
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />YearUp/Pluralsight</li>
+                <li><span>2020</span><br />The City College of New York</li>
+                <li><span>2019</span><br />Brooklyn College</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------services---------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Full Stack Development</h2>
+            <p>
+              Web app development (React, JavaScript, HTML/CSS). Database
+              management (MySQL). Code versioning (GitHub). Java/Spring Boot
+              development. API testing (Postman). Cloud deployment.
+              Troubleshooting and log analysis (Splunk).
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>IT Skills and Project Management</h2>
+            <p>
+              Agile/Scrum project management. Collaboration/documentation
+              (Confluence). Identity and access management (SailPoint).
+              Microsoft 365 utilization.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Identity and Access Management</h2>
+            <p>
+              Managing and securing customer identities for digital services.
+              Implementing user registration and authentication processes.
+              Access control and compliance management. Deployment and
+              configuration.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------portfolio--------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Company Website</h3>
+              <p>
+                The website enables secure user registration, login, and account
+                management, ensuring data privacy and security.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Accounting Ledger</h3>
+              <p>
+                The financial tracking application allows users to
+                get reports of their previous transactions and also gives the
+                user the ability to create a debit or credit transaction and
+                view their ledger with a date-formatted filter.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>User Registration Journey</h3>
+              <p>
+                It allows new users to register and utilize multi-factor
+                authentication (MFA).
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+   <!-- -------------------certificates------------------- -->
+   <div id="certificates">
+    <div class="container">
+      <h1 class="sub-title">Certificates</h1>
+      <div class="certificate-carousel">
+        <div class="certificate">
+          <img src="certificates/certificate-1.png"/>
+          <h3>Foundations of Cybersecurity</h3>
+          <p>
+            This certificate represents a strong foundation in cybersecurity concepts and practices.
+          </p>
+        </div>
+        <div class="certificate">
+          <img src="certificates/certificate-2.png"/>
+          <h3>Google Cloud Fundamentals Core Infrastructure</h3>
+          <p>
+            Certificate for successfully completing the Google Cloud Fundamentals Core Infrastructure course.
+          </p>
+        </div>
+      <div class="certificate">
+        <img src="certificates/certificate-3.png"/>
+        <h3>Google Cloud Hands-on Labs</h3>
+        <p>
+          Practical certificate demonstrating hands-on experience with Google Cloud services.
+        </p>
+      </div>
+      <div class="certificate">
+        <img src="certificates/certificate-4.png"/>
+        <h3>AWS S3 Basics</h3>
+        <p>
+          Certificate showcasing your knowledge of the basics of Amazon S3 (Simple Storage Service).
+        </p>
+      </div>
+      <div class="certificate">
+        <img src="certificates/certificate-5.png"/>
+        <h3>Micro-Certification - Welcome to ServiceNow</h3>
+        <p>
+          Micro-certification for successfully completing the "Welcome to ServiceNow" course.
+        </p>
+      </div>
+      <div class="certificate">
+        <img src="certificates/certificate-6.png"/>
+        <h3>Python for Data Science, AI & Development</h3>
+        <p>
+          Certificate for mastering Python for data science, AI, and development.
+        </p>
+      </div>
+      <div class="certificate">
+        <img src="certificates/certificate-7.png"/>
+        <h3>YearUp JavaFocus Certificate</h3>
+        <p>
+          Certificate for achieving excellence in Java development through YearUp's JavaFocus program.
+        </p>
+      </div>
+      <div class="certificate">
+        <img src="certificates/certificate-8.png"/>
+        <h3>ForgeRock Identity Management Product Knowledge</h3>
+        <p>
+          Certificate demonstrating proficiency in ForgeRock Identity Management product knowledge.
+        </p>
+      </div>
+    </div>
+    <div class="certificate-navigation">
+      <button id="prev-certificate">Previous</button>
+      <button id="next-certificate">Next</button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- -------------------contact------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>choutou0924@gmail.com</p>
+            <!-- <p>xxx-xxx-xxxx</p> -->
+            <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tou-chou-a4a7b322b/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-slack"></i></a>
+            <a href="https://github.com/tchou0"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="mail" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+    </div>
+<div class="copyright">
+  <p>Content courtesy of "GreatStack" YouTube <i class="fa-solid fa-heart"></i></p>
+</div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+<script>
+  var sidemenu =document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right ="-200px"
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzi9qJOR4daScdcMo8EsRfufWNA5A6Hu1fYFmI_QMTyPE7HLe_yz2VevTxLVyS1wWzY/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<!-- ----------------------------certificates------------------------- -->
+<script>
+  const certificates = document.querySelectorAll('.certificate');
+  const prevButton = document.getElementById('prev-certificate');
+  const nextButton = document.getElementById('next-certificate');
+
+  let currentCertificateIndex = 0;
+
+  function showCertificate(index) {
+    certificates.forEach((certificate, i) => {
+      certificate.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  function navigateCertificate(forward) {
+    if (forward) {
+      currentCertificateIndex = (currentCertificateIndex + 1) % certificates.length;
+    } else {
+      currentCertificateIndex = (currentCertificateIndex - 1 + certificates.length) % certificates.length;
+    }
+    showCertificate(currentCertificateIndex);
+  }
+
+  prevButton.addEventListener('click', () => navigateCertificate(false));
+  nextButton.addEventListener('click', () => navigateCertificate(true));
+
+  showCertificate(currentCertificateIndex);
+</script>
+
+  </body>
+</html>
