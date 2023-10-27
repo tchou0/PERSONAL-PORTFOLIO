@@ -378,7 +378,7 @@ form.btn2 {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 700px; /* Adjust the maximum width as per your preference */
+  max-width: 800px; /* Adjust the maximum width as per your preference */
   margin: 0 auto; /* Center the certificate horizontally */
 }
 
@@ -386,7 +386,7 @@ form.btn2 {
   max-width: 100%; /* Ensure the image fits within the certificate */
   border-radius: 20px;
   /* Add this if you want to control the image height as well */
-  max-height: 400px; /* Adjust the maximum height as per your preference */
+  max-height: 500px; /* Adjust the maximum height as per your preference */
 }
 
 .certificate h3 {
